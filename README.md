@@ -7,7 +7,7 @@ It allows you to track your progress on coding problems, filter by difficulty an
 
 ## 🌐 Live Demo
 
-👉 **Try it here:** [LeetCode Problem Tracker](https://siva-datla.github.io/LeetCode-Problem-Tracker/)  
+👉 **Try it here:** [LeetCode Problem Tracker](https://siva-datla.github.io/Leetcode-Problem-Tracker/)  
 
 *(Open the link to use the tracker directly in your browser — no setup required!)*
 
