@@ -1,0 +1,221 @@
+:root {
+  --bg-color: #0d1117;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --text-color: #e6edf3;
+  --accent: #00b4d8;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --select-bg: rgba(0,0,0,0.5); /* dropdown background in dark mode */
+  --option-bg: #0d1117; /* option background in dark mode */
+}
+
+body.light {
+  --bg-color: #f9fafb;
+  --card-bg: #ffffff;
+  --text-color: #111;
+  --accent: #007bff;
+  --border-color: #ccc;
+  --select-bg: #ffffff; /* light mode select */
+  --option-bg: #ffffff; /* light mode option */
+}
+
+
+
+
+:root {
+  --bg-color: #0d1117;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --text-color: #e6edf3;
+  --accent: #00b4d8;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+#themeToggle {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#themeToggle:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.form-container input,
+.form-container select {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  width: 150px;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+}
+
+#addBtn {
+  background-color: var(--accent);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#addBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px var(--accent);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--accent);
+}
+
+td a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+
+button.edit, button.delete {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button.edit {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+button.delete {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+button.edit:hover {
+  background-color: #f1c40f;
+}
+
+button.delete:hover {
+  background-color: #ff5a4e;
+}
+
+
+body.light {
+  --bg-color: #f9fafb;
+  --card-bg: #ffffff;
+  --text-color: #111;
+  --accent: #007bff;
+  --border-color: #ccc;
+}
+
+
+/* Status colors */
+td:nth-child(4) { /* Status column */
+  font-weight: bold;
+}
+
+td:nth-child(4)[data-status="Not Started"] {
+  color: #f39c12; /* orange */
+}
+
+td:nth-child(4)[data-status="In Progress"] {
+  color: #3498db; /* blue */
+}
+
+td:nth-child(4)[data-status="Solved"] {
+  color: #2ecc71; /* green */
+}
+
+/* Dark mode select boxes */
+.form-container select {
+  background-color: var(--select-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.form-container select option {
+  background-color: var(--option-bg);
+  color: var(--text-color);
+}
+
+
+.form-container select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23e6edf3' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeetCode Problem Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>LeetCode Problem Tracker</h1>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <div class="form-container">
+    <input type="text" id="topic" placeholder="Topic" />
+    <input type="text" id="problem" placeholder="Problem Name" />
+    <select id="difficulty">
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+    <select id="status">
+      <option value="Not Started">Not Started</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Solved">Solved</option>
+    </select>
+    <input type="text" id="link" placeholder="LeetCode Link" />
+    <button id="addBtn">Add Problem</button>
+  </div>
+
+  <table id="problemTable">
+    <thead>
+      <tr>
+        <th>Topic</th>
+        <th>Problem</th>
+        <th>Difficulty</th>
+        <th>Status</th>
+        <th>Link</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
